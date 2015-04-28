@@ -40,7 +40,6 @@ var Billing = React.createClass({displayName: "Billing",
     handleUserInput: function(name, thing, money){
       items = this.state.items;
       items.push({name: name, thing: thing, money: money});
-      console.log("1111")
       this.setState({
         items: items
       });
@@ -51,7 +50,6 @@ var Billing = React.createClass({displayName: "Billing",
       });
     },
     render: function(){
-      console.log("222")
       return(
         React.createElement("div", null, 
           React.createElement(BillingInput, {onUserInput: this.handleUserInput}), 
