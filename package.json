@@ -1,0 +1,26 @@
+{
+  "name": "billing",
+  "version": "1.0.0",
+  "description": "billing",
+  "main": "bundle.js",
+  "dependencies": {
+    "moment": "^2.10.2",
+    "react": "^0.13.2"
+  },
+  "devDependencies": {
+    "jsx-loader": "^0.13.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wkgg/billing.git"
+  },
+  "author": "Amos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wkgg/billing/issues"
+  },
+  "homepage": "https://github.com/wkgg/billing"
+}

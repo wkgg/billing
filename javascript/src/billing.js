@@ -1,3 +1,6 @@
+var React = require('react');
+var Moment = require('moment');
+
 var BillingInput = React.createClass({
     handleSubmit: function(e){
       this.props.onUserInput(
@@ -25,7 +28,7 @@ var BillingOutput = React.createClass({
       rows = []
 
       this.props.items.forEach(function(item){
-        rows.push(<div>{item.name} 买 {item.thing} 花了 {item.money}元</div>)
+        rows.push(<div>{Moment().format('L')}  {item.name} 买 {item.thing} 花了 {item.money}元</div>)
       });
 
       return(
@@ -59,4 +62,4 @@ var Billing = React.createClass({
     }
 });
 
-React.render(<Billing />, document.getElementById('billing'))
+module.exports = Billing
