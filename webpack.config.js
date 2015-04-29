@@ -1,3 +1,5 @@
+var webpack = require("webpack");
+
 module.exports = {
   entry: './javascript/main.js',
   output: {
@@ -7,5 +9,8 @@ module.exports = {
     loaders: [
       {test: /\.js$/, loader: 'jsx-loader?harmony' }
     ]
-  }
+  },
+  plugins: [
+    new webpack.optimize.UglifyJsPlugin()
+  ]
 };
